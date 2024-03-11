@@ -1,3 +1,4 @@
+-- Active: 1702602768533@@127.0.0.1@3306@employees_db
 SELECT * FROM departments;
 
 INSERT INTO departments (name)
