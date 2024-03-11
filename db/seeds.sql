@@ -1,19 +1,20 @@
 SELECT * FROM departments;
 
 INSERT INTO departments (name)
-VALUES ('Finance'),
+VALUES 
+       ('Admin'),
+       ('Finance'),
        ('Marketing'),
-       ('Operations'),
-       ('Admin');
+       ('Operations');
 
 SELECT * FROM roles;
 
 INSERT INTO roles(title, salary, department_id)
-VALUES ('CEO', 150000, 4),
-       ('Executive Assistant', 50000, 4),
-       ('CFO', 100000, 1),
-       ('CMO', 100000, 2),
-       ('COO', 100000, 3);
+VALUES ('CEO', 150000, 1),
+       ('Executive Assistant', 50000, 1),
+       ('CFO', 100000, 2),
+       ('CMO', 100000, 3),
+       ('COO', 100000, 4);
 
 SELECT * FROM employees;
 
