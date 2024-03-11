@@ -36,9 +36,9 @@ THEN I am prompted to select an employee to update and their new role and this i
 GitHub Repository:  
 https://github.com/stuartgosborn/hw12-sql-employee-tracker
 
-Demonstration Video:
+Demonstration Video:  
 https://app.screencastify.com/v3/watch/C2kIG6D5LHotQYJezIfL  
-  
+
 
 ## Contributors
 - Stuart Osborn 
