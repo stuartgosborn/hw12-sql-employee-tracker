@@ -91,7 +91,11 @@ function viewRoles() {
 function viewEmployees() {
   // MySQL query to select all employees with role and department information
   db.query(
-    "SELECT employees.id, employees.first_name, employees.last_name, roles.title AS role, roles.salary, departments.name AS department FROM employees LEFT JOIN roles ON employees.role_id = roles.id LEFT JOIN departments ON roles.department_id = departments.id",
+    `SELECT employees.id, employees.first_name, employees.last_name, roles.title AS role, roles.salary, departments.name AS department, CONCAT(m.first_name, ' ', m.last_name) AS manager
+    FROM employees LEFT 
+    JOIN roles ON employees.role_id = roles.id LEFT 
+    JOIN departments ON roles.department_id = departments.id LEFT
+    JOIN employees AS m ON employees.manager_id = m.id;`,
     (err, res) => {
       if (err) throw err;
       console.table(res); // Display employees in formatted table
